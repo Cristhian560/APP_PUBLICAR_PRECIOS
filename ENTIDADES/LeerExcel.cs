@@ -25,10 +25,6 @@ namespace AppPublicarPrecios.ENTIDADES
             {
                 MessageBox.Show("POR FAVOR CERRAR EL EXCEL");
             }
-            //catch (ArgumentException)
-            //{ 
-
-            //}
         }
         public List<CodigoProducto> ListaCodigoProducto()
         { 
@@ -37,7 +33,7 @@ namespace AppPublicarPrecios.ENTIDADES
             {
                 string codigo = sl.GetCellValueAsString("A" + i);
                 CodigoProducto codigoProducto = new CodigoProducto();
-                if (codigo!="")
+                if (codigo!="" && ComprobarCodigoProducto(codigo))
                 {
                     codigoProducto.Codigo = codigo;
                     lista_codigo_productos.Add(codigoProducto);
@@ -45,12 +41,32 @@ namespace AppPublicarPrecios.ENTIDADES
             }
             return lista_codigo_productos;
         }
+        public bool ComprobarCodigoProducto(string codigo)
+        {
+            try
+            {
+                int x = Convert.ToInt32(codigo);
+                if (codigo.Length == 7)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch
+            {
+                MessageBox.Show("LOS CODIGOS NO DEBEN CONTENER CARACTERES","ERROR");
+                return false;
+            }
+        }
         public List<CodigoProveedor> ListaCodigoProveedor()
         {
             lista_codigos_proveedores = new List<CodigoProveedor>();
             for (int i = 2; i <= ultima_fila; i++)
             {
-                string codigo = FormatearCodigo(sl.GetCellValueAsString("B" + i));
+                string codigo = FormatearCodigoProveedor(sl.GetCellValueAsString("B" + i));
                 CodigoProveedor OCodigoProveedor = new CodigoProveedor();
                 
                 if (codigo!="")
@@ -61,16 +77,15 @@ namespace AppPublicarPrecios.ENTIDADES
             }
             return lista_codigos_proveedores;
         }
-        public string FormatearCodigo(string codigo)
+        public string FormatearCodigoProveedor(string codigo)
         {    
             string cod = "";
             try
-            {
-                
+            { 
                 if (codigo != "")
                 {
                     int x = Convert.ToInt32(codigo);
-                    if (codigo.Length <= 6)
+                    if (codigo.Length < 6 )
                     {
                         if (codigo.Length == 1)
                         {
@@ -98,17 +113,21 @@ namespace AppPublicarPrecios.ENTIDADES
                         }
                         return cod;
                     }
+                    else if (codigo.Length == 6)
+                    {
+                        return codigo;
+                    }
                     else
                     {
                         MessageBox.Show("HAY CODIGOS DE PROVEEDORES QUE TIENEN MAS DE 6 DIGITOS REVISAR! \n" +
-                            "LOS CODIGOS DE PROVEEDOR CON MAS DE 6 DIGITOS NO SE PUBLICARAN");
+                            "LOS CODIGOS DE PROVEEDOR CON MAS DE 6 DIGITOS NO SE PUBLICARAN","ERROR");
                     }
                 }
             }
             catch
             {
                 MessageBox.Show("LAS COLUMNAS NO DEBEN CONTENER CARACTERES \n" +
-                    "LOS CODIGOS DE PROVEEDOR QUE CONTIENEN CARACTERES NO PUBLICARAN ");
+                    "LOS CODIGOS DE PROVEEDOR QUE CONTIENEN CARACTERES NO SE PUBLICARAN ","ERROR");
             }
             return cod;
         }

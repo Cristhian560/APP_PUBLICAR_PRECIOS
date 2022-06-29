@@ -1,0 +1,3 @@
+C:\Users\Cristhian\Documents\AppPublicarPrecios.pdb
+C:\Users\Cristhian\Documents\sni.dll
+C:\Users\Cristhian\Documents\AppPublicarPrecios.exe

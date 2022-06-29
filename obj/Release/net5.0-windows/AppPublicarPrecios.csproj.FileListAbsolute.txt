@@ -1,0 +1,9 @@
+C:\Users\Cristhian\source\repos\AppPublicarPrecios\obj\Release\net5.0-windows\AppPublicarPrecios.csproj.AssemblyReference.cache
+C:\Users\Cristhian\source\repos\AppPublicarPrecios\obj\Release\net5.0-windows\AppPublicarPrecios.PRESENTACION.FormAyuda.resources
+C:\Users\Cristhian\source\repos\AppPublicarPrecios\obj\Release\net5.0-windows\AppPublicarPrecios.PRESENTACION.FormPrincipal.resources
+C:\Users\Cristhian\source\repos\AppPublicarPrecios\obj\Release\net5.0-windows\AppPublicarPrecios.Properties.Resources.resources
+C:\Users\Cristhian\source\repos\AppPublicarPrecios\obj\Release\net5.0-windows\AppPublicarPrecios.csproj.GenerateResource.cache
+C:\Users\Cristhian\source\repos\AppPublicarPrecios\obj\Release\net5.0-windows\AppPublicarPrecios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cristhian\source\repos\AppPublicarPrecios\obj\Release\net5.0-windows\AppPublicarPrecios.AssemblyInfoInputs.cache
+C:\Users\Cristhian\source\repos\AppPublicarPrecios\obj\Release\net5.0-windows\AppPublicarPrecios.AssemblyInfo.cs
+C:\Users\Cristhian\source\repos\AppPublicarPrecios\obj\Release\net5.0-windows\AppPublicarPrecios.csproj.CoreCompileInputs.cache

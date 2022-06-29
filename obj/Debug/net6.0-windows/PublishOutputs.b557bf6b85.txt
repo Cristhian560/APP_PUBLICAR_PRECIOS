@@ -1,0 +1,14 @@
+C:\Users\Cristhian\Desktop\AppPublicarPrecios.exe
+C:\Users\Cristhian\Desktop\AppPublicarPrecios.dll
+C:\Users\Cristhian\Desktop\AppPublicarPrecios.deps.json
+C:\Users\Cristhian\Desktop\AppPublicarPrecios.runtimeconfig.json
+C:\Users\Cristhian\Desktop\AppPublicarPrecios.pdb
+C:\Users\Cristhian\Desktop\DocumentFormat.OpenXml.dll
+C:\Users\Cristhian\Desktop\RJCodeAdvance.RJControls.dll
+C:\Users\Cristhian\Desktop\SpreadsheetLight.dll
+C:\Users\Cristhian\Desktop\System.Data.SqlClient.dll
+C:\Users\Cristhian\Desktop\runtimes\win-arm64\native\sni.dll
+C:\Users\Cristhian\Desktop\runtimes\win-x64\native\sni.dll
+C:\Users\Cristhian\Desktop\runtimes\win-x86\native\sni.dll
+C:\Users\Cristhian\Desktop\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Cristhian\Desktop\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

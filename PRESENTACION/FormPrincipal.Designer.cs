@@ -36,6 +36,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.btnSalir = new RJCodeAdvance.RJControls.RJButton();
             this.btnAyuda = new RJCodeAdvance.RJControls.RJButton();
             this.dgvProductos = new System.Windows.Forms.DataGridView();
@@ -48,8 +49,15 @@
             this.lblTotalCodigoProducto = new System.Windows.Forms.Label();
             this.lblTotalCodigoProveedores = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProveedores)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSalir
@@ -59,12 +67,13 @@
             this.btnSalir.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnSalir.BorderRadius = 0;
             this.btnSalir.BorderSize = 0;
+            this.btnSalir.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(12, 398);
+            this.btnSalir.Location = new System.Drawing.Point(0, 410);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(150, 40);
+            this.btnSalir.Size = new System.Drawing.Size(196, 40);
             this.btnSalir.TabIndex = 0;
             this.btnSalir.Text = "SALIR";
             this.btnSalir.TextColor = System.Drawing.Color.White;
@@ -73,17 +82,18 @@
             // 
             // btnAyuda
             // 
-            this.btnAyuda.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnAyuda.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnAyuda.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnAyuda.BackgroundColor = System.Drawing.SystemColors.HotTrack;
             this.btnAyuda.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnAyuda.BorderRadius = 0;
             this.btnAyuda.BorderSize = 0;
+            this.btnAyuda.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnAyuda.FlatAppearance.BorderSize = 0;
             this.btnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAyuda.ForeColor = System.Drawing.Color.White;
-            this.btnAyuda.Location = new System.Drawing.Point(12, 352);
+            this.btnAyuda.Location = new System.Drawing.Point(0, 370);
             this.btnAyuda.Name = "btnAyuda";
-            this.btnAyuda.Size = new System.Drawing.Size(150, 40);
+            this.btnAyuda.Size = new System.Drawing.Size(196, 40);
             this.btnAyuda.TabIndex = 1;
             this.btnAyuda.Text = "Ayuda";
             this.btnAyuda.TextColor = System.Drawing.Color.White;
@@ -120,7 +130,7 @@
             this.dgvProductos.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvProductos.EnableHeadersVisualStyles = false;
             this.dgvProductos.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgvProductos.Location = new System.Drawing.Point(332, 39);
+            this.dgvProductos.Location = new System.Drawing.Point(332, 63);
             this.dgvProductos.Name = "dgvProductos";
             this.dgvProductos.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -175,7 +185,7 @@
             this.dgvProveedores.DefaultCellStyle = dataGridViewCellStyle7;
             this.dgvProveedores.EnableHeadersVisualStyles = false;
             this.dgvProveedores.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dgvProveedores.Location = new System.Drawing.Point(510, 39);
+            this.dgvProveedores.Location = new System.Drawing.Point(510, 63);
             this.dgvProveedores.Name = "dgvProveedores";
             this.dgvProveedores.ReadOnly = true;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -203,17 +213,17 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnBuscar.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnBuscar.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnBuscar.BackgroundColor = System.Drawing.SystemColors.HotTrack;
             this.btnBuscar.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnBuscar.BorderRadius = 0;
             this.btnBuscar.BorderSize = 0;
             this.btnBuscar.FlatAppearance.BorderSize = 0;
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Location = new System.Drawing.Point(12, 39);
+            this.btnBuscar.Location = new System.Drawing.Point(0, 78);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(150, 40);
+            this.btnBuscar.Size = new System.Drawing.Size(196, 40);
             this.btnBuscar.TabIndex = 7;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextColor = System.Drawing.Color.White;
@@ -226,17 +236,18 @@
             // 
             // btnPublicar
             // 
-            this.btnPublicar.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnPublicar.BackgroundColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnPublicar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnPublicar.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnPublicar.BackgroundColor = System.Drawing.SystemColors.HotTrack;
+            this.btnPublicar.BorderColor = System.Drawing.Color.Transparent;
             this.btnPublicar.BorderRadius = 0;
             this.btnPublicar.BorderSize = 0;
             this.btnPublicar.FlatAppearance.BorderSize = 0;
             this.btnPublicar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPublicar.ForeColor = System.Drawing.Color.White;
-            this.btnPublicar.Location = new System.Drawing.Point(12, 150);
+            this.btnPublicar.Location = new System.Drawing.Point(0, 115);
+            this.btnPublicar.Margin = new System.Windows.Forms.Padding(0);
             this.btnPublicar.Name = "btnPublicar";
-            this.btnPublicar.Size = new System.Drawing.Size(150, 40);
+            this.btnPublicar.Size = new System.Drawing.Size(196, 40);
             this.btnPublicar.TabIndex = 8;
             this.btnPublicar.Text = "Publicar";
             this.btnPublicar.TextColor = System.Drawing.Color.White;
@@ -246,8 +257,10 @@
             // lblTotalCodigoProducto
             // 
             this.lblTotalCodigoProducto.AutoSize = true;
+            this.lblTotalCodigoProducto.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalCodigoProducto.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTotalCodigoProducto.Location = new System.Drawing.Point(332, 377);
+            this.lblTotalCodigoProducto.ForeColor = System.Drawing.Color.White;
+            this.lblTotalCodigoProducto.Location = new System.Drawing.Point(332, 410);
             this.lblTotalCodigoProducto.Name = "lblTotalCodigoProducto";
             this.lblTotalCodigoProducto.Size = new System.Drawing.Size(0, 20);
             this.lblTotalCodigoProducto.TabIndex = 9;
@@ -255,8 +268,10 @@
             // lblTotalCodigoProveedores
             // 
             this.lblTotalCodigoProveedores.AutoSize = true;
+            this.lblTotalCodigoProveedores.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalCodigoProveedores.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTotalCodigoProveedores.Location = new System.Drawing.Point(510, 377);
+            this.lblTotalCodigoProveedores.ForeColor = System.Drawing.Color.White;
+            this.lblTotalCodigoProveedores.Location = new System.Drawing.Point(510, 410);
             this.lblTotalCodigoProveedores.Name = "lblTotalCodigoProveedores";
             this.lblTotalCodigoProveedores.Size = new System.Drawing.Size(0, 20);
             this.lblTotalCodigoProveedores.TabIndex = 10;
@@ -264,33 +279,84 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
+            this.lblTotal.BackColor = System.Drawing.Color.Transparent;
             this.lblTotal.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTotal.Location = new System.Drawing.Point(332, 377);
+            this.lblTotal.ForeColor = System.Drawing.Color.White;
+            this.lblTotal.Location = new System.Drawing.Point(332, 410);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(0, 20);
             this.lblTotal.TabIndex = 11;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.btnBuscar);
+            this.panel1.Controls.Add(this.btnPublicar);
+            this.panel1.Controls.Add(this.btnAyuda);
+            this.panel1.Controls.Add(this.btnSalir);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(196, 450);
+            this.panel1.TabIndex = 12;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(196, 81);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(196, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(598, 46);
+            this.panel2.TabIndex = 13;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(6, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(294, 30);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ACTUALIZACION DE PRECIOS";
             // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(794, 450);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.lblTotalCodigoProveedores);
             this.Controls.Add(this.lblTotalCodigoProducto);
-            this.Controls.Add(this.btnPublicar);
-            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.dgvProveedores);
             this.Controls.Add(this.dgvProductos);
-            this.Controls.Add(this.btnAyuda);
-            this.Controls.Add(this.btnSalir);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormPrincipal";
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProveedores)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,5 +376,9 @@
         private Label lblTotalCodigoProducto;
         private Label lblTotalCodigoProveedores;
         private Label lblTotal;
+        private Panel panel1;
+        private PictureBox pictureBox1;
+        private Panel panel2;
+        private Label label1;
     }
 }

@@ -25,7 +25,8 @@ namespace AppPublicarPrecios.PRESENTACION
         }
         private void btnAyuda_Click(object sender, EventArgs e)
         {
-
+            FormAyuda formAyuda = new FormAyuda();
+            formAyuda.ShowDialog();
         }
         private void CargarGrillaProductos(List<CodigoProducto> lista)
         {

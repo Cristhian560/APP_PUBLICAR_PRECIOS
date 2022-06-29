@@ -1,0 +1,3 @@
+C:\Users\Cristhian\Desktop\APP\directamente con clickone\AppPublicarPrecios.pdb
+C:\Users\Cristhian\Desktop\APP\directamente con clickone\sni.dll
+C:\Users\Cristhian\Desktop\APP\directamente con clickone\AppPublicarPrecios.exe
